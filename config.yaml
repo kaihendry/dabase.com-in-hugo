@@ -1,0 +1,6 @@
+title: dabase
+baseURL: 'https://hugo.dabase.com'
+theme: ananke
+enableRobotsTXT: true
+defaultContentLanguage: en
+enableRobotsTXT: true
