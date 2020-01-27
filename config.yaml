@@ -4,3 +4,4 @@ theme: "ga-hugo-theme"
 enableRobotsTXT: true
 defaultContentLanguage: en
 enableRobotsTXT: true
+sectionPagesMenu: "main"

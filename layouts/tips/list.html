@@ -7,9 +7,14 @@ Want a listing like
 * [Debian](debian) (12 tips)
 </pre>
 
-<ul class="contents">
-{{ range .Paginator.Pages }}
-<li>{{.Title}}
-</li>
+{{ range .Site.Sections }}
+  <li><a href="{{ .Permalink }}">{{ .Title }}</a></li>
 {{ end }}
-</ul>
+
+<nav class="sidebar-nav">
+    {{ $currentPage := . }}
+    {{ range .Site.Menus.main }}
+    <a class="sidebar-nav-item{{if or ($currentPage.IsMenuCurrent "main" .) ($currentPage.HasMenuCurrent "main" .) }} active{{end}}" href="{{ .URL }}" title="{{ .Title }}">{{ .Name }}</a>
+    {{ end }}
+</nav>
+
