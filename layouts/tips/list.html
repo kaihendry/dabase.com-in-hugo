@@ -1,0 +1,15 @@
+<h1>Tips top level listing</h1>
+
+<pre>
+Want a listing like
+
+* [Cloud](cloud) (24 tips)
+* [Debian](debian) (12 tips)
+</pre>
+
+<ul class="contents">
+{{ range .Paginator.Pages }}
+<li>{{.Title}}
+</li>
+{{ end }}
+</ul>
