@@ -3,3 +3,4 @@ baseURL: https://hugo.dabase.com
 theme: ga-hugo-theme
 enableRobotsTXT: true
 defaultContentLanguage: en
+disablePathToLower: true
