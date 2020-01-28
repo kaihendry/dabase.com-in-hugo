@@ -1,6 +1,5 @@
 title: dabase
-baseURL: 'https://hugo.dabase.com'
-theme: "ga-hugo-theme"
+baseURL: https://hugo.dabase.com
+theme: ga-hugo-theme
 enableRobotsTXT: true
 defaultContentLanguage: en
-enableRobotsTXT: true
