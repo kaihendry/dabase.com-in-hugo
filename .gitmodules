@@ -1,3 +1,7 @@
 [submodule "themes/ga-hugo-theme"]
 	path = themes/ga-hugo-theme
 	url = https://github.com/giraffeacademy/ga-hugo-theme.git
+
+[submodule "themes/docsy"]
+	path = themes/docsy
+	url = https://github.com/google/docsy.git
