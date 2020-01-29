@@ -4,3 +4,7 @@ theme: ga-hugo-theme
 enableRobotsTXT: true
 defaultContentLanguage: en
 disablePathToLower: true
+markup:
+  goldmark:
+    renderer:
+      unsafe: true
