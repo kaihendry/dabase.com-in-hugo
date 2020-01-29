@@ -1,19 +1,9 @@
-<html>
-<head>
-     <meta charset="UTF-8">
-     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-{{ $alternate_title := replace .File.BaseFileName "_" " " | title }}
-     <title>
-{{ .Title  | default $alternate_title }}
-	 </title>
-</head>
-<body>
+{{ define "main" }}
+<header>
+<h1>{{.Title}}</h1>
+<div style="color:grey; font-size:16px;">{{ dateFormat "Monday, Jan 2, 2006" .Date }}</div>
+</header>
 
-     <div style="margin:25px;">
-          <h1>{{.Title}}</h1>
-          <div style="color:grey; font-size:16px;">{{ dateFormat "Monday, Jan 2, 2006" .Date }}</div>
-          <div style="font-size:18px;">{{.Content}}</div>
-     </div>
-     {{ partial "footer" . }}
-</body>
-</html>
+{{.Content}}
+
+{{ end }}

@@ -1,12 +1,4 @@
-<html>
-<head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>{{.Title}}</title>
-</head>
-<body>
-{{.Content}}
-
+{{ define "main" }}
 <ul>
 {{ range .Pages }}
 <li><a href="{{.URL}}">
@@ -15,7 +7,4 @@
 </a></li>
 {{ end }}
 </ul>
-
-{{ partial "footer" . }}
-</body>
-</html>
+{{ end }}
